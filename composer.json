@@ -1,0 +1,29 @@
+{
+    "name": "klipper/importer-database",
+    "type": "library",
+    "description": "Importer Database component of Klipper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "François Pluchino",
+            "email": "francois.pluchino@klipper.dev"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "doctrine/dbal": "^2.7.0",
+        "klipper/importer": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": { "Klipper\\Bridge\\Importer\\Database\\": "" },
+        "exclude-from-classmap": [
+            "**/Tests/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
